@@ -1,13 +1,13 @@
 {
-  "name": "fuck",
-  "version": "0.0.0-pre",
+  "name": "bumble-bee",
+  "version": "0.0.0-pre.0",
   "description": "A CLI for transforming data",
   "main": "index.js",
   "bin": {
-    "fuck": "./bin/cli.js"
+    "bee": "./bin/cli.js"
   },
   "repository": {
-    "url": "https://github.com/imaustink/fuck",
+    "url": "https://github.com/imaustink/bumble-bee",
     "type": "git"
   },
   "scripts": {

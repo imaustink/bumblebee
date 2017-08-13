@@ -1,14 +1,14 @@
-# Fuck
+# bumble-bee
 
-Fuck is a data transformation CLI. Just provide a transformation script and pipe data to it.
+bumble-bee is a data transformation CLI. Just provide a transformation script and pipe data to it.
 
 ## Install
 
-- $ `npm i fuck -g`
+- $ `npm i bumble-bee -g`
 
 ## Usage
 
-- $ `cowsay moo | fuck -s replace -f replace-map.json`
+- $ `cowsay moo | bee -s replace -f replace-map.json`
 
 __`replace.js`:__
 ```javascript
