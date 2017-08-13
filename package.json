@@ -1,0 +1,32 @@
+{
+  "name": "fuck",
+  "version": "0.0.0-pre",
+  "description": "A CLI for transforming data",
+  "main": "index.js",
+  "bin": {
+    "fuck": "./bin/cli.js"
+  },
+  "repository": {
+    "url": "https://github.com/imaustink/fuck",
+    "type": "git"
+  },
+  "scripts": {
+    "release:pre": "npm version prerelease && npm publish --tag=pre",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CLI",
+    "transform",
+    "data",
+    "json"
+  ],
+  "author": "Autin Kurpuis",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "inquirer": "^3.2.1"
+  }
+}
