@@ -1,6 +1,7 @@
 [
 	{
-		"name": "scripts_path",
+		"type": "text",
+		"name": "external_scripts_path",
 		"message": "Please choose a directory to store scripts in"
 	}
 ]

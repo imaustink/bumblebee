@@ -8,9 +8,9 @@ bumble-bee is a data transformation CLI. Just provide a transformation script an
 
 ## Usage
 
-- $ `cowsay moo | bee -s replace -f replace-map.json`
+- $ `cowsay moo | bee run -f map.json replace-map`
 
-__`replace.js`:__
+__`replace-map.js`:__
 ```javascript
 module.exports = function({pipe, file}){
 	let map = JSON.parse(file);
@@ -24,7 +24,7 @@ module.exports = function({pipe, file}){
 ```
 Transformation scripts can return any value, even a `Promise`.
 
-__`replace-map.json`:__
+__`map.json`:__
 ```json
 {
 	"moo": "foo"
@@ -46,8 +46,8 @@ __Output:__
 ## Options
 
 ```
--V, --version          output the version number
--s, --script [module]  Name of script to handle transformation
--f, --file [file]      Path to input file to be passed to transformation
--h, --help             output usage information
+-V, --version      output the version number
+-f, --file [file]  Path to input file to be passed to transformation(s)
+-p, --pretty       Indent JSON output
+-h, --help         output usage information
 ```

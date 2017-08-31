@@ -2,7 +2,6 @@
   "name": "bumble-bee",
   "version": "0.0.0-pre.1",
   "description": "A CLI for transforming data",
-  "main": "index.js",
   "bin": {
     "bee": "./bin/cli.js"
   },
