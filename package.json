@@ -6,7 +6,7 @@
     "bee": "./bin/cli.js"
   },
   "repository": {
-    "url": "https://github.com/imaustink/bumble-bee",
+    "url": "https://github.com/imaustink/bumblebee",
     "type": "git"
   },
   "scripts": {
