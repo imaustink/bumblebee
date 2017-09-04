@@ -1,7 +1,3 @@
 module.exports = ({file, pipe}) => {
-	let output = [];
-	for(let item in file){
-		output.push(item);
-	}
-	return output;
+	return Object.keys(file).map(key => file[key]);
 };
