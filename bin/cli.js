@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const program = require('commander');
-const getExecuter = require('../lib/get-executer');
+const executer = require('../lib/executer');
 const package = require('../package');
 
 program
@@ -11,12 +11,12 @@ program
 program
 	.command('run <script> [moreScripts...]')
 	.description('Execute transformation(s).')
-	.action(getExecuter('run', program));
+	.action(executer('run', program));
 
 program
 	.command('add <name>', null)
 	.description('Create new transformation script')
-	.action(getExecuter('add', program));
+	.action(executer('add', program));
 	
 program
 	.parse(process.argv);
