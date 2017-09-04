@@ -13,10 +13,9 @@ bumble-bee is a data transformation CLI. Just provide a transformation script an
 __`replace-map.js`:__
 ```javascript
 module.exports = function({pipe, file}){
-	let map = JSON.parse(file);
-	for(var key in map){
-		if(map.hasOwnProperty(key)){
-			pipe = pipe.replace(key, map[key]);
+	for(var key in file){
+		if(file.hasOwnProperty(key)){
+			pipe = pipe.replace(key, file[key]);
 		}
 	}
 	return pipe;
