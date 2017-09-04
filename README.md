@@ -58,7 +58,7 @@ Commands:
 	add <name>                     Create new transformation script
 ```
 
-# How Transformations Work
+## How Transformations Work
 
 A transformation is just a module that exports a function.
  
