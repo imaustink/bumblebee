@@ -64,9 +64,9 @@ Commands:
 
 A transformation is just a module that exports a function.
  
-Bee will call transformations with an `object` as the first argument, the `object` will have `pipe` and `file` properties, `pipe` being the text that was piped to bee, `file` being the contents of the file specified with the `--file` argument, files with a `.json` extension will be parse automatically.
+Bee will call transformations with an `object` as the first argument, the `object` will have `pipe` and `file` properties, `pipe` being the text that was piped to bee, `file` being the contents of the file specified with the `--file` argument, files with a `.json` extension will be parsed automatically.
  
-The value returned by the transformation will be serialized if not already a `string`, with the exception of `Promise`s, the resolved value will be used instead, and serialized, if needed. The value will then be passed to the next transformation, or written to standard out if there is no remaining transformations specified.
+The value returned by the transformation will be serialized if it's not already a `string`, with the exception of `Promise`s, the resolved value will be used instead, and serialized, if needed. The value will then be passed to the next transformation, or written to standard out if there are no remaining transformations specified to run.
 
 __Example Transformation:__
 ```javascript
