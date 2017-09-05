@@ -1,6 +1,6 @@
 {
   "name": "bumble-bee",
-  "version": "0.0.0-pre.2",
+  "version": "0.0.0-pre.3",
   "description": "A CLI for transforming data",
   "bin": {
     "bee": "./bin/cli.js"
@@ -14,7 +14,7 @@
     "release:patch": "npm version patch && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && && npm publish",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava **/*.test.js"
   },
   "keywords": [
     "CLI",
@@ -27,5 +27,8 @@
   "dependencies": {
     "commander": "^2.11.0",
     "inquirer": "^3.2.1"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0"
   }
 }
