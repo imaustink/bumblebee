@@ -1,6 +1,6 @@
 {
   "name": "bumble-bee",
-  "version": "0.0.0-pre.6",
+  "version": "0.0.0-pre.7",
   "description": "A CLI for transforming data",
   "bin": {
     "bee": "./bin/cli.js"
