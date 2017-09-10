@@ -14,7 +14,10 @@
     "release:patch": "npm version patch && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && && npm publish",
-    "test": "eslint . && ava **/*.test.js"
+    "test": "eslint . && ava **/*.test.js",
+    "preversion": "npm test",
+    "version": "git commit -am \"Update dist for release\" && git checkout -b release && git add -f dist/",
+    "postversion": "git push --tags && git checkout master && git branch -D release && git push"
   },
   "keywords": [
     "CLI",
