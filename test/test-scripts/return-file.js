@@ -1,3 +1,3 @@
-module.exports = function({pipe, file}){
+module.exports = function({file}){
 	return file;
 };

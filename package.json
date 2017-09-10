@@ -14,7 +14,7 @@
     "release:patch": "npm version patch && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && && npm publish",
-    "test": "ava **/*.test.js"
+    "test": "eslint . && ava **/*.test.js"
   },
   "keywords": [
     "CLI",
@@ -29,6 +29,7 @@
     "inquirer": "^3.2.1"
   },
   "devDependencies": {
-    "ava": "^0.22.0"
+    "ava": "^0.22.0",
+    "eslint": "^4.6.1"
   }
 }
