@@ -1,7 +1,7 @@
-import test from 'ava';
-import run from '../lib/run';
-import path from 'path';
-import fs from 'fs';
+const test = require('ava');
+const run = require('../lib/run');
+const path = require('path');
+const fs = require('fs');
 
 const TEST_CONFIG = {
 	external_scripts_path: path.join(__dirname, 'test-scripts')
