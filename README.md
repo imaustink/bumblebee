@@ -1,6 +1,6 @@
 # bumble-bee
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/imaustink/bumblebee.svg)](https://greenkeeper.io/)[![Build Status](https://travis-ci.org/imaustink/bumblebee.svg)](https://travis-ci.org/imaustink/bumblebee)[![npm version](https://badge.fury.io/js/bumble-bee.svg)](https://www.npmjs.com/package/bumble-bee)
+[![Build Status](https://travis-ci.org/imaustink/bumblebee.svg)](https://travis-ci.org/imaustink/bumblebee)[![Greenkeeper badge](https://badges.greenkeeper.io/imaustink/bumblebee.svg)](https://greenkeeper.io/)[![npm version](https://badge.fury.io/js/bumble-bee.svg)](https://www.npmjs.com/package/bumble-bee)
 
 Bee transforms data using modules referred to as transformations. It can run data through a single transformation or a pipeline of many transformations. The data returned from the last transformations will be written to standard out.
 
